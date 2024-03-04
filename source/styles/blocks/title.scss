@@ -1,0 +1,14 @@
+.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title--light {
+  color: $color-default-white;
+}
+
+.title--dark {
+  color: $color-default-black;
+}

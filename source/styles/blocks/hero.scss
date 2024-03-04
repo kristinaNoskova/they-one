@@ -1,0 +1,132 @@
+.hero {
+  padding-top: 17px;
+  background-color: $color-black;
+
+  @media (min-width: $vp-1440) {
+    @include grid(1fr);
+    padding-top: 106px;
+  }
+
+  // &::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   z-index: -1;
+  //   min-height: 1024px;
+  //   background-color: $color-black;
+  //   background-image:
+  //     image-set(
+  //       url("../../images/hero/hero-bg-black@1x.webp") 1x,
+  //       url("../../images/hero/hero-bg-black@2x.webp") 2x
+  //     );
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center center;
+  // }
+
+
+  // &::after {
+  //   @include mask(url("../../images/hero/hero-icon.svg"), $color-default-white);
+  //   mask-position: center bottom 10%;
+  //   content: "";
+  //   top: 20%;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 919px;
+  // }
+
+  // &::after {
+  //   @include mask(url("../../images/hero/hero-icon.svg"), $color-default-white);
+  //   mask-position: center bottom;
+  //   content: "";
+  //   display: block;
+  //   grid-column: 1 / -1;
+  //   grid-row: 1 / 2;
+  //   align-self: end;
+  //   width: 100vw;
+  //   min-height: 832px;
+
+  //   @media (min-width: $vp-1600) {
+  //     mask-position: center bottom -100px;
+  //   }
+  // }
+}
+
+.hero .container {
+  @include grid(1fr);
+
+
+  @media (min-width: $vp-1440) {
+    padding-right: 55px;
+    position: relative;
+    z-index: 20;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.hero__title {
+  grid-row: 2;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+
+
+  @media (min-width: $vp-1440) {
+    text-align: start;
+    font-size: 40px;
+    line-height: normal;
+  }
+}
+
+.hero__wrapper {
+  padding: 0 64px;
+  margin-bottom: 26px;
+
+  @media (min-width: $vp-1440) {
+    grid-row: 1;
+    justify-self: end;
+    padding: 0;
+  }
+}
+
+.hero__descr {
+  font-size: 14px;
+  text-align: end;
+  color: $color-default-white;
+
+  @media (min-width: $vp-1440) {
+    font-size: 20px;
+  }
+}
+
+.hero-list {
+  max-width: 270px;
+
+  @media (min-width: $vp-1440) {
+    grid-column: 2;
+  }
+}
+
+.hero-list__item {
+  @include flex($align-items: flex-start);
+  flex-wrap: nowrap;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: $color-paynes-grey;
+
+  &::before {
+    content: "—";
+    display: block;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}

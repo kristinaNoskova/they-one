@@ -1,0 +1,18 @@
+.info {
+  padding: 133px 0 170px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.36) 0, rgba(0, 0, 0, 0.36) 100%),
+    image-set(
+      url("../../images/info/info-bg@1x.webp") 1x,
+      url("../../images/info/info-bg@2x.webp") 2x
+    );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.info__descr {
+  font-size: 40px;
+  line-height: 52px;
+  color: $color-default-white;
+}

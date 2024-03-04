@@ -1,0 +1,45 @@
+.header {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    position: relative;
+    display: block;
+    padding-top: 16px;
+  }
+}
+
+.header .container {
+  @media (min-width: $vp-1440) {
+    @include grid(51% 1fr auto);
+    padding-right: 46px;
+  }
+}
+
+// .header__item {
+//   margin-bottom: 5px;
+// }
+
+// .header__item:last-child {
+//   margin-bottom: 0;
+// }
+
+// .header__link {
+//   font-size: 16px;
+//   color: $color-default-white;
+// }
+
+// .header__tel {
+//   @include flex($align-items: center);
+//   font-size: 16px;
+//   color: $color-default-white;
+
+//   &::before {
+//     @include mask(url("../../images/icons/stack.svg#phone-icon"), $color-default-white);
+//     content: "";
+//     display: block;
+//     width: 24px;
+//     height: 24px;
+//     margin-right: 3px;
+//   }
+// }
+
