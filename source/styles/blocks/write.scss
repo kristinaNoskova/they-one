@@ -1,17 +1,49 @@
 .write {
-  align-items: center;
-  justify-content: center;
-  padding: 35px 0 26px;
   border: none;
+
+  @media (min-width: $vp-768) {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: none;
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .write__descr {
-  margin-bottom: 44px;
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 31px;
   color: $color-black;
+
+  @media (min-width: $vp-768) {
+    text-align: center;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 50px;
+    text-align: start;
+  }
 }
 
 .write__link {
-  max-width: 220px;
+  display: block;
+  max-width: 145px;
+  padding: 10px 30px;
+
+
+  @media (min-width: $vp-768) {
+    margin: 0 auto;
+    max-width: 220px;
+  }
+
+  @media (min-width: $vp-1024) {
+    align-self: center;
+    margin: 0;
+    font-size: 24px;
+    padding: 20px 40px;
+  }
 }

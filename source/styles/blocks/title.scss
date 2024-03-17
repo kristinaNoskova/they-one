@@ -1,8 +1,17 @@
 .title {
   margin: 0;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.3em;
+
+  @media (min-width: $vp-1024) {
+    font-size: 30px;
+  }
+
+
+  @media (min-width: $vp-1440) {
+    font-size: 48px;
+  }
 }
 
 .title--light {

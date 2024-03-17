@@ -5,5 +5,7 @@
 }
 
 .subtitle--light {
-  color: $color-dark-gray;
+  @media (min-width: $vp-1024) {
+    color: $color-dark-gray;
+  }
 }

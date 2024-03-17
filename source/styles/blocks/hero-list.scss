@@ -1,0 +1,35 @@
+.hero-list {
+  max-width: 270px;
+
+  @media (min-width: $vp-1024) {
+    max-width: none;
+    grid-column: 2;
+    justify-self: start;
+    align-self: end;
+  }
+}
+
+.hero-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1em;
+  color: $color-paynes-grey;
+
+  &::before {
+    content: "—";
+    display: block;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 28px;
+  }
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
