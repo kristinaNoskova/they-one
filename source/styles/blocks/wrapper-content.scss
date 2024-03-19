@@ -30,6 +30,31 @@
       top: 24vh;
     }
   }
+
+  //фон с аниацией webp
+
+  // background-color: $color-black-pearl;
+  // background-image: url("../../images/hero/hero-icon.svg"), url("../../images/hero/chain.webp");
+  // background-repeat: no-repeat, no-repeat;
+  // background-position: left 65% top 45vh, center center;
+  // background-size: cover, cover;
+
+
+  // @media (min-width: $vp-768) {
+  //   background-color: $color-black-pearl;
+  //   background-image: url("../../images/hero/hero-icon.svg"), url("../../images/hero/chain.webp");
+  //   background-repeat: no-repeat, no-repeat;
+  //   background-position: left 70% top 40vh, center center;
+  //   background-size: cover, cover;
+  // }
+
+  // @media (min-width: $vp-1024) {
+  //   background-color: $color-black-pearl;
+  //   background-image: url("../../images/hero/hero-icon.svg"), url("../../images/hero/chain.webp");
+  //   background-repeat: no-repeat, no-repeat;
+  //   background-position: left 100% top 25vh, center center;
+  //   background-size: cover, cover;
+  // }
 }
 
 .wrapper-content__video {
