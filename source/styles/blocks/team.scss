@@ -1,8 +1,9 @@
 .team {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   padding-top: 52px;
   padding-bottom: 41px;
+  background-color: transparent;
 
   @media (min-width: $vp-1024) {
     padding-bottom: 91px;
@@ -29,7 +30,6 @@
 }
 
 .team__title {
-  margin-top: 55px;
   text-align: end;
 
 

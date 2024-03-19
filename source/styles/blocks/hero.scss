@@ -1,4 +1,10 @@
 .hero {
+  position: relative;
+  z-index: 4;
+  height: auto;
+}
+
+.hero .container {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -11,6 +17,7 @@
     row-gap: 0;
     padding-top: 50px;
     padding-bottom: 32px;
+    min-height: 700px;
   }
 
   @media (min-width: $vp-1440) {
@@ -21,15 +28,15 @@
 .hero__title {
   max-width: 500px;
   grid-row: 2;
-  margin-bottom: 250px;
+  margin-bottom: 90px;
   font-size: 24px;
   text-align: center;
 
   @media (min-width: $vp-1024) {
     grid-row: 1;
     grid-column: 1;
-    align-self: center;
-    margin-bottom: 200px;
+    align-self: start;
+    margin-bottom: 70px;
     max-width: none;
     font-size: 40px;
     text-align: start;
